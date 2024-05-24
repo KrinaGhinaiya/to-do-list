@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e5d4ff;
+    margin: 0;
+
+  }
+  .heading {
+    font-family: "Dancing Script", cursive;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  #todo-app {
+    width: 450px;
+    height: 600px;
+    padding: 20px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+  }
+  
+  #task-input {
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #d0a2f7;
+    border-radius: 0;
+    font-family: "Indie Flower", cursive;
+    font-size: 20px;
+  }
+  
+  #add-task {
+    padding: 10px 20px;
+    background-color: #d0a2f7;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input:focus {
+    outline: none;
+  }
+  #add-task:hover {
+    background-color: #7743db;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    height: 335px;
+    overflow-y: auto;
+    margin-top:25px;
+  }
+  ul::-webkit-scrollbar {
+    width: 0; 
+  }
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family: "Indie Flower", cursive;
+    font-size: 20px;
+    border-bottom: 2px solid #d0a2f7;
+  }
+  
+  .task-text {
+    font-family: "Indie Flower",cursive;
+    font-size: 20px;
+    width: 340px;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  .icon-container {
+    display:flex;
+    width:62px;
+    gap:8px;
+    padding-left: 10px;
+    justify-content:right;
+    align-items:center;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    cursor: pointer;
+  }
+  .delete-icon{
+    color:#E74646
+  }
+  .edit-icon{
+    color:#A084DC;
+  }
+  #clear{
+    background-color:#d0a2f7;
+    margin-top: 70px;
+    margin-left: 200px;
+    justify-content: center;
+    font-size: 15px;
+    border: none;
+    padding: 9px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  .checkbox {
+    margin-right: 8px;
+  }
+  .disabled-li {
+    color: gray;
+    font-family: "Indie Flower", cursive;
+    font-size: 20px;
+    width: 340px;
+    word-wrap: break-word;
+    white-space: normal;
+    /*   pointer-events: none; */
+  }
+  
